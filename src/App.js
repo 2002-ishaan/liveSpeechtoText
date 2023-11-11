@@ -1,4 +1,3 @@
-
 import "./App.css"
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import useClipboard from "react-use-clipboard";
@@ -22,11 +21,10 @@ const App = () => {
 
     return (
         <>
-            <div className="container">
+            <div className="container" style={{ width: '100%', height: '400px' }}>
                 <h2>Speech to Text Converter</h2>
                 <br/>
-                <p>A React hook that converts speech from the microphone to text and makes it available to your React
-                    components.</p>
+                <p>"Transforming Voices into Text: Real-Time Precision, Instant Understanding, Seamless Communication.".</p>
 
                 <div className="main-content" onClick={() =>  setTextToCopy(transcript)}>
                     {transcript}
@@ -49,3 +47,4 @@ const App = () => {
 };
 
 export default App;
+
